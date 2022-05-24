@@ -1,6 +1,6 @@
 ## Integeration
- 
-Works with any boilerplate backend chose, uses all the end-points given in the doc (check backend scheme).   
+
+Works with any boilerplate backend chose, uses all the end-points given in the doc (check backend schema).   
 
 ## Scripts
 
