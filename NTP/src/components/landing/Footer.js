@@ -10,7 +10,7 @@ export default function footer() {
         <div style={{ color:'white', padding: '30px', textAlign:'center'}}>
             <FaGithub  size="40px" href="#"/>
             <br /><br />
-            View the code <Link style={{ color: "Lightgreen" }} href="https://github.com/itslasagne/betches">Here</Link>.
+            View the code <Link style={{ color: "Lightgreen" }} href="https://github.com/Aerothon-NTP/boilerplate-gen">Here</Link>.
             <br /><br />
             <FaCopyright />
             &nbsp;&nbsp;

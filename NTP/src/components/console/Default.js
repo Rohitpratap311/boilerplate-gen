@@ -74,8 +74,8 @@ function Default() {
                     <p>The Entire System is Deployed on WhatsApp, hence it can be used via WhatsApp mobile App or WhatsApp Web or WhatsApp Desktop.</p>
                     <p>Steps to Access the Virtual Assistant:</p>
                     <ol>
-                      <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Add : +1 (415) 523-8886 to your Contact List under "It's Lasagne".</i></li></h4>
-                      <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Open "It's Lasagne" Chat in WhatsApp.</i></li></h4>
+                      <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Add : +1 (415) 523-8886 to your Contact List under "It's NTP".</i></li></h4>
+                      <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Open "It's NTP" Chat in WhatsApp.</i></li></h4>
                       <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Type "Join notice-square" to start the chatbot.</i></li></h4>
                       <h4 style={{ textAlign: "left", color: "#c9caea" }}><li><i>Enjoy the Virtual Assistant.</i></li></h4>
                     </ol>

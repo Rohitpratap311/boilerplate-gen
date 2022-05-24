@@ -82,7 +82,7 @@ const ResponsiveAppbar = props => {
                 width="30"
                 height="30"
               />
-              <span style={{ paddingLeft: '20px' }}>LASAGNE</span>
+              <span style={{ paddingLeft: '20px' }}>NTP</span>
             </Typography>
           </Typography>
         </Toolbar>

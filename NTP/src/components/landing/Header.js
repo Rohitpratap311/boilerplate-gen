@@ -96,7 +96,7 @@ const BackToTop = props => {
             height="30"
           />
         <Typography className={classes.logoTypo}>
-          LASAGNE
+          NTP
         </Typography>
         <span className={classes.iconContainer}>
           <Button variant="h6">

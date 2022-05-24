@@ -120,7 +120,7 @@ const SideDrawer = props => {
             </ListItem>
             <ListItem button >
               <ListItemIcon><Avatar><GitHubIcon fontSize='small' /></Avatar></ListItemIcon>
-                <Link href="https://github.com/itslasagne/betches"><ListItemText primary="Github Repository" /></Link>
+                <Link href="https://github.com/Aerothon-NTP/boilerplate-gen"><ListItemText primary="Github Repository" /></Link>
             </ListItem>
           </List>
         </div>

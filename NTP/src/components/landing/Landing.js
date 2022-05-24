@@ -8,11 +8,10 @@ import { BiDesktop } from "react-icons/bi";
 
 import { useHistory } from "react-router-dom";
 import Header from "./Header";
-import { PieChart,WordChart,TeamChart } from "./Charts.js"
+import { PieChart,WordChart } from "./Charts.js"
 import TechStack from "./Techstack"
 import Footer from "./Footer"
 import start_image from "./images/IT_Service_Management.png"
-import research_paper from "./images/BE_Research_Paper.pdf"
 // import FadeIn from "../utils/FadeIn";
 
 import "./Landing.css";
@@ -38,11 +37,11 @@ const Landing = () => {
               Go to Console
             </Button>
             &nbsp;&nbsp;&nbsp; 
-            <Button variant="outlined" color="primary" href="https://github.com/itslasagne/betches">
+            <Button variant="outlined" color="primary" href="https://github.com/Aerothon-NTP/boilerplate-gen">
               Github
             </Button>
             &nbsp;&nbsp;&nbsp; 
-            <Button variant="outlined" color="primary" href={ research_paper }>
+            <Button variant="outlined" color="primary" href="">
               Research Paper
             </Button>
           </Grid>
@@ -126,18 +125,6 @@ const Landing = () => {
           <div className="inner-content">
             <h1 className="Headers">TECH-STACK</h1>
             <TechStack />
-          </div>
-        </div>
-      </div>
-
-
-      <div className="section-content section4" style={{ padding: "0px", background: "#111" }}>
-        <div className="inner-content">
-          <div className="inner-content">
-            <h1 className="Headers">OUR TEAM</h1>
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <TeamChart />
-            </div>
           </div>
         </div>
       </div>

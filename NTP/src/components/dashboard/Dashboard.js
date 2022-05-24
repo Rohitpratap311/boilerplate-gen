@@ -3,7 +3,6 @@ import { Button, Grid } from "@material-ui/core"
 
 import qg from "./qg1.jpeg"
 import doc from "./doc.jpeg"
-import research_paper from "../landing/images/BE_Research_Paper.pdf"
 
 function Dashboard() {
     return (
@@ -53,7 +52,7 @@ function Dashboard() {
         <h2 style={{ textAlign: "left", color: "#c9caea" }}><u><i>DOWNLOAD RESEARCH PAPER</i></u></h2>
         <h4 style={{ textAlign: "left" }}>
             &nbsp;&nbsp;&nbsp; 
-            <Button variant="outlined" color="primary" href={ research_paper }>
+            <Button variant="outlined" color="primary" href="">
               Research Paper
             </Button>
             </h4>

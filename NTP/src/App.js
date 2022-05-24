@@ -99,7 +99,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-        <Router basename="/betches">{routes}</Router>
+        <Router>{routes}</Router>
     </ThemeProvider>
   );
 };
