@@ -1,9 +1,8 @@
 import json
 import os
 
-from flask_sqlalchemy import SQLAlchemy
-
 from flask import Flask, request
+from flask_sqlalchemy import SQLAlchemy
 
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATABASE = os.path.join(PROJECT_ROOT, 'db/todo_app.db')
@@ -48,11 +47,11 @@ def read_todos():
 
 @app.post("/todos")
 def create_todo():
-    text = request.form.get("text")
+    text = request.get_json().get("text")
     new_todo = Todo(text=text, completed=False)
     db.session.add(new_todo)
     db.session.commit()
-    return json.dumps(as_dict(new_todo))
+    return as_dict(new_todo)
 
 
 @app.put("/todos/<string:todo_id>")

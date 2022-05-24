@@ -10,25 +10,25 @@ This is a basic API for a todo application made with Flask. You can use any fron
 - Get all the todo items present in the database, send a get request on the following endpoint:
 
 ```
-http://127.0.0.1:8000/todos
+http://127.0.0.1:5000/todos
 ```
 
 - To post a todo item in the database, send a post request on the following endpoint:
 
 ```
-http://127.0.0.1:8000/todos
+http://127.0.0.1:5000/todos
 ```
 
 - To update a specific todo item as completed/pending, send a put request on the following endpoint:
 
 ```
-http://127.0.0.1:8000/todos/<todoItemID>
+http://127.0.0.1:5000/todos/<todoItemID>
 ```
 
 - To delete a specific todo item, send a delete request on the following endpoint:
 
 ```
-http://127.0.0.1:8000/todos/<todoItemID>
+http://127.0.0.1:5000/todos/<todoItemID>
 ```
 
 - To check the working or to run the basic template, run the commands in terminal:
