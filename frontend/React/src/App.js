@@ -21,12 +21,13 @@ function App() {
 	};
 
 	const removeTodo = (id) => {
-		deleteTodo(id, (_) => {});
-		setTodos(
-			todos.filter((todo) => {
-				return todo.id !== id;
-			})
-		);
+		deleteTodo(id, (_) => {
+			setTodos(
+				todos.filter((todo) => {
+					return todo.id !== id;
+				})
+			);
+		});
 	};
 
 	return (
