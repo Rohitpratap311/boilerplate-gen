@@ -1,0 +1,19 @@
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #1c233e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d375a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d375a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

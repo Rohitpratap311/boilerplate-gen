@@ -1,0 +1,19 @@
+.start-img{
+    width: 600px;
+    height: 500px
+}
+
+@media (max-width:767px) {
+
+  .start-img {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .start-img {
+    width: 200px;
+    height: 180px;
+  }
+}
