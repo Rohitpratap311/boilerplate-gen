@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/boilerplate-gen/static/css/main.fe8c8320.chunk.css",
-    "main.js": "/boilerplate-gen/static/js/main.93181823.chunk.js",
-    "main.js.map": "/boilerplate-gen/static/js/main.93181823.chunk.js.map",
-    "runtime-main.js": "/boilerplate-gen/static/js/runtime-main.2017e7e1.js",
-    "runtime-main.js.map": "/boilerplate-gen/static/js/runtime-main.2017e7e1.js.map",
+    "main.js": "/boilerplate-gen/static/js/main.4353220f.chunk.js",
+    "main.js.map": "/boilerplate-gen/static/js/main.4353220f.chunk.js.map",
+    "runtime-main.js": "/boilerplate-gen/static/js/runtime-main.2b378a84.js",
+    "runtime-main.js.map": "/boilerplate-gen/static/js/runtime-main.2b378a84.js.map",
     "xlsx.js": "/boilerplate-gen/static/js/xlsx.39b18e3d.chunk.js",
     "xlsx.js.map": "/boilerplate-gen/static/js/xlsx.39b18e3d.chunk.js.map",
     "static/js/3.5a9e9ac4.chunk.js": "/boilerplate-gen/static/js/3.5a9e9ac4.chunk.js",
@@ -13,13 +13,13 @@
     "static/js/4.9f4348f4.chunk.js.map": "/boilerplate-gen/static/js/4.9f4348f4.chunk.js.map",
     "static/js/5.d728c11e.chunk.js": "/boilerplate-gen/static/js/5.d728c11e.chunk.js",
     "static/js/5.d728c11e.chunk.js.map": "/boilerplate-gen/static/js/5.d728c11e.chunk.js.map",
-    "static/js/6.fd32807a.chunk.js": "/boilerplate-gen/static/js/6.fd32807a.chunk.js",
-    "static/js/6.fd32807a.chunk.js.map": "/boilerplate-gen/static/js/6.fd32807a.chunk.js.map",
+    "static/js/6.69d482f7.chunk.js": "/boilerplate-gen/static/js/6.69d482f7.chunk.js",
+    "static/js/6.69d482f7.chunk.js.map": "/boilerplate-gen/static/js/6.69d482f7.chunk.js.map",
     "index.html": "/boilerplate-gen/index.html",
     "static/css/main.fe8c8320.chunk.css.map": "/boilerplate-gen/static/css/main.fe8c8320.chunk.css.map",
     "static/js/3.5a9e9ac4.chunk.js.LICENSE.txt": "/boilerplate-gen/static/js/3.5a9e9ac4.chunk.js.LICENSE.txt",
     "static/js/5.d728c11e.chunk.js.LICENSE.txt": "/boilerplate-gen/static/js/5.d728c11e.chunk.js.LICENSE.txt",
-    "static/js/6.fd32807a.chunk.js.LICENSE.txt": "/boilerplate-gen/static/js/6.fd32807a.chunk.js.LICENSE.txt",
+    "static/js/6.69d482f7.chunk.js.LICENSE.txt": "/boilerplate-gen/static/js/6.69d482f7.chunk.js.LICENSE.txt",
     "static/media/Pytorch.a30886e6.png": "/boilerplate-gen/static/media/Pytorch.a30886e6.png",
     "static/media/System Architecture.44fe7eab.png": "/boilerplate-gen/static/media/System Architecture.44fe7eab.png",
     "static/media/amcharts.0d2e0eb2.png": "/boilerplate-gen/static/media/amcharts.0d2e0eb2.png",
@@ -37,9 +37,9 @@
     "static/media/whatsapp.c262910f.png": "/boilerplate-gen/static/media/whatsapp.c262910f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2017e7e1.js",
+    "static/js/runtime-main.2b378a84.js",
     "static/js/3.5a9e9ac4.chunk.js",
     "static/css/main.fe8c8320.chunk.css",
-    "static/js/main.93181823.chunk.js"
+    "static/js/main.4353220f.chunk.js"
   ]
 }
