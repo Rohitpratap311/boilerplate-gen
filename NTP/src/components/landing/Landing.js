@@ -27,11 +27,17 @@ const Landing = () => {
           <Grid style={{ paddingleft:"0px", textAlign: "left" }} item md={6} xs={12}>
             <br/>
             <button style={{ background: "linear-gradient(90deg, rgba(29, 36, 63, 1) 5%, rgba(35, 46, 79, 1) 96%)", borderRadius: "50px", padding: "15px", color: "white", fontSize: "15px" }}>
-              BE PROJECT
+              Aerothon 4.0
             </button>
             <br/>
-            <h1 style={{ padding: '10px', fontSize: '50px' }}>Virtual Assistant</h1>
-            <h3 style={{ padding: '10px', color: "gray" }}>An efficient cloud-based system capable of providing support and assistance to the teaching faculty and students. The highlighting features would be : <ul><li>Answering almost any question from a Closed domain.</li><li>Given a context and a domain(s), the assistant generates relevant questions.</li><li>Efficent Document(s) Summarization</li><li>Given a context and a domain(s), the assistant can generate a question bank.</li><li>Open Domain Question Answering based on Wikipedia knowledge.</li></ul></h3>
+            <h1 style={{ padding: '10px', fontSize: '50px' }}>Noob-To-Pro</h1>
+            <h3 style={{ padding: '10px', color: "gray" }}>An efficient cloud-based system capable of providing support and assistance to build native apps for tech-stacks of your choice. The highlighting features would be : 
+              <ul>
+                <li>A quickstart for the development</li>
+                <li>Freedom of choice on the Tech-stacks</li>
+                <li>Efficent Document(s) Summarization</li>
+              </ul>
+            </h3>
             <br/>
             <Button variant="contained" color="primary" onClick={() => history.push("/dashboard")}>
               Go to Console
