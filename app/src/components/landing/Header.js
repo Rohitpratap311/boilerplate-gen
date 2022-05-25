@@ -144,19 +144,7 @@ const BackToTop = props => {
             offset={-70}
             duration={500}
           >
-            Tech-Stack
-          </Link>
-          </Button>
-          <Button variant="h6">
-          <Link
-            activeClass="active"
-            to="section4"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Team
+            Tech-Stacks
           </Link>
           </Button>
           <Button variant="contained" color="primary" onClick={() => history.push("/dashboard")}>

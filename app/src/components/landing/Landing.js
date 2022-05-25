@@ -41,33 +41,25 @@ const Landing = () => {
 								fontSize: "15px",
 							}}
 						>
-							BE PROJECT
+							Aerothon 4.0
 						</button>
 						<br />
 						<h1 style={{ padding: "10px", fontSize: "50px" }}>
-							Virtual Assistant
+							Noob-To-Pro
 						</h1>
 						<h3 style={{ padding: "10px", color: "gray" }}>
 							An efficient cloud-based system capable of providing
-							support and assistance to the teaching faculty and
-							students. The highlighting features would be :{" "}
+							support and assistance that lets you build native apps using a cross-platform UI toolkit. 
+							The highlighting features would be :{" "}
 							<ul>
 								<li>
-									Answering almost any question from a Closed
-									domain.
+									A jumpstart on the development process
 								</li>
 								<li>
-									Given a context and a domain(s), the
-									assistant generates relevant questions.
-								</li>
-								<li>Efficent Document(s) Summarization</li>
-								<li>
-									Given a context and a domain(s), the
-									assistant can generate a question bank.
+									freedom of choice on the Tech-Stacks
 								</li>
 								<li>
-									Open Domain Question Answering based on
-									Wikipedia knowledge.
+									Implements best practices and principles
 								</li>
 							</ul>
 						</h3>
@@ -248,7 +240,7 @@ const Landing = () => {
 			>
 				<div className="inner-content">
 					<div className="inner-content">
-						<h1 className="Headers">TECH-STACK</h1>
+						<h1 className="Headers">TECH-STACKS AVAILABLE</h1>
 						<TechStack />
 					</div>
 				</div>

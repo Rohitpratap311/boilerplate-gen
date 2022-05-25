@@ -49,6 +49,12 @@ public class todoController {
 		todoServiceInterface.deleteTodo(todo_id);
 		return new ResponseEntity<Void>(HttpStatus.ACCEPTED);
 	}
+
+	@DeleteMapping("/todos")
+	public ResponseEntity<Void> deleteAllTodo(){
+		todoServiceInterface.deleteAllTodo();
+		return new ResponseEntity<Void>(HttpStatus.ACCEPTED);
+	}
 	
 	@PutMapping("/todos/{todo_id}")
 	public ResponseEntity<Todo> updateTodo(@PathVariable("todo_id") Long todo_id) {

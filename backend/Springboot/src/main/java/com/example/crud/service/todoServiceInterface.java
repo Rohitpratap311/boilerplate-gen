@@ -16,4 +16,6 @@ public interface todoServiceInterface {
 
 	public void deleteTodo(Long todo_id);
 
+	public void deleteAllTodo();
+
 }

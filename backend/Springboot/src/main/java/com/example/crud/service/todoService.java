@@ -45,4 +45,9 @@ public class todoService implements todoServiceInterface {
 	public void deleteTodo(Long todo_id) {
 		crudRepo.deleteById(todo_id);
 	}
+
+	@Override
+	public void deleteAllTodo(){
+		crudRepo.deleteAll();
+	}
 }
