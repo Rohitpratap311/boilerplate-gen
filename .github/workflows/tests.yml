@@ -78,7 +78,7 @@ jobs:
 
       - name: Build with Maven
         working-directory: ./backend/Springboot
-        run: mvn -B package --file pom.xml
+        run: mvn install
 
       - name: Set up mysql
         uses: mirromutth/mysql-action@v1.1
