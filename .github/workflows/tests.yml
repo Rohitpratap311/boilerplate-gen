@@ -95,5 +95,5 @@ jobs:
 
       - name: Start testing
         run : mvn spring-boot:run
-        timeout-minutes: 1
+        timeout-minutes: 5
         
