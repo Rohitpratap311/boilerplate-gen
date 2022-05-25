@@ -8,7 +8,7 @@ PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATABASE = os.path.join(PROJECT_ROOT, 'db/todo_app.db')
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////" + DATABASE
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + DATABASE
 db = SQLAlchemy(app)
 
 
