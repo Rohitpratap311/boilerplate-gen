@@ -94,6 +94,7 @@ jobs:
           mysql password: 12345678
 
       - name: Start testing
+        working-directory: ./backend/Springboot
         run : mvn spring-boot:run
         timeout-minutes: 5
         
