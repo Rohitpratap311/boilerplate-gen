@@ -12,7 +12,7 @@ from tests import templates
 class TestSpringBoot(templates.TestCase):
     @classmethod
     def setup_class(cls):
-        """ setup any state specific to the execution of the given module."""
+        """ setup any state specific to the execution of the given class."""
         p = None
         folder = str(Path(__file__).parent.parent / "backend/Springboot")
 
@@ -33,7 +33,7 @@ class TestSpringBoot(templates.TestCase):
 
     @classmethod
     def teardown_class(cls):
-        """teardown any state that was previously setup with a setup_module
+        """teardown any state that was previously setup with a setup_class
         method.
         """
         try:

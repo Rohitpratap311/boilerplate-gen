@@ -10,6 +10,11 @@
 - React
 - Angular
 
+## Dependency
+- Pytest
+        
+        pip install pytest==7.1.2  
+
 ## Tests
 - Test - Flask
 
