@@ -1,7 +1,7 @@
-from webbrowser import get
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 from sql_app import crud, models, schemas
 from sql_app.database import SessionLocal, engine
@@ -56,3 +56,11 @@ def update_todo(todo_id: int, db: Session = Depends(get_db)):
 def delete_todo(todo_id: int, db: Session = Depends(get_db)):
     db_todo = crud.delete_todo(db, todo_id)
     return db_todo
+
+@app.delete("/todos")
+def delete_todos(db: Session = Depends(get_db)):
+    res = crud.delete_todos(db)
+    return res
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=5000, log_level="info")
