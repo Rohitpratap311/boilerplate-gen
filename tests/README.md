@@ -1,5 +1,6 @@
 # Integration tests
 
+
 ## Backend
 - Flask
 - FastApi
@@ -10,10 +11,15 @@
 - React
 - Angular
 
+
 ## Dependency
 - Pytest
         
         pip install pytest==7.1.2  
+- Requests
+
+        pip install requests==2.27.1
+
 
 ## Tests
 - Test - Flask
