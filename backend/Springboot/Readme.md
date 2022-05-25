@@ -31,8 +31,20 @@ http://127.0.0.1:8000/todos/<todoItemID>
 http://127.0.0.1:8000/todos/<todoItemID>
 ```
 
-For further details, you can refer to <a href="https://spring.io/projects/spring-boot">Spring-Boot</a>. Also, as a prerequisite, you'll need to have maven and SQL pre-installed on you system.
+- To delete all todo items, send a delete request on the following endpoint:
 
+```
+http://127.0.0.1:8000/todos
+```
+
+For further details, you can refer to <a href="https://spring.io/projects/spring-boot">Spring-Boot</a>. Also, as a prerequisite, you'll need to have maven 3.x and SQL pre-installed on you system. And as an SQL action, create a DB and change <a href="https://github.com/Aerothon-NTP/boilerplate-gen/blob/main/backend/Springboot/src/main/resources/application.properties">Application.properties</a> file accordingly.
+
+
+- To install all the packages/dependencies, run the command in terminal:
+
+```
+mvn install
+```
 
 - To check the working or to run the basic template, run the command in terminal:
 
