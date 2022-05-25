@@ -1,7 +1,7 @@
 import json
 import os
 
-from flask import Flask, request
+from flask import Flask, make_response, request
 from flask_sqlalchemy import SQLAlchemy
 
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
@@ -68,6 +68,13 @@ def delete_todo(todo_id):
     db.session.delete(todo)
     db.session.commit()
     return as_dict(todo)
+
+
+@app.delete("/todos")
+def delete_todos():
+    Todo.query.delete()
+    db.session.commit()
+    return make_response("", 200)
 
 
 if __name__ == "__main__":
