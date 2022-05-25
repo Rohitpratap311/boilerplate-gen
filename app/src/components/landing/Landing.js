@@ -254,24 +254,6 @@ const Landing = () => {
 				</div>
 			</div>
 
-			<div
-				className="section-content section4"
-				style={{ padding: "0px", background: "#111" }}
-			>
-				<div className="inner-content">
-					<div className="inner-content">
-						<h1 className="Headers">OUR TEAM</h1>
-						<div
-							style={{
-								display: "flex",
-								justifyContent: "center",
-								alignItems: "center",
-							}}
-						></div>
-					</div>
-				</div>
-			</div>
-
 			<Footer />
 		</div>
 	);
