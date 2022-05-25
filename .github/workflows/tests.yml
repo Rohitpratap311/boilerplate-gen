@@ -1,4 +1,4 @@
-name: Integrations tests
+name: Integration tests
 
 on:
   push:
@@ -55,10 +55,20 @@ jobs:
 #-----------------------------------------------------------------------------------#
   Springboot:
       runs-on: ubuntu-latest
-
+      
+      env:
+        DB_DATABASE: codedecode
+        DB_USER: root
+        DB_PASSWORD: root
+        
       steps:
       - uses: actions/checkout@v3
-
+      
+      - name: Set up MySQL
+        run: |  
+          sudo /etc/init.d/mysql start
+          mysql -e 'CREATE SCHEMA ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }}
+      
       - name: Set up Python 3.8
         uses: actions/setup-python@v3
         with:
@@ -79,22 +89,8 @@ jobs:
       - name: Build with Maven
         working-directory: ./backend/Springboot
         run: mvn install
-
-      - name: Set up mysql
-        uses: mirromutth/mysql-action@v1.1
-        with:
-          host port: 3306
-          container port: 3306
-          character set server: 'utf8'
-          collation server: 'utf8_general_ci'
-          mysql version: '8.0'
-          mysql database: 'codedecode'
-          mysql root password: 12345678
-          mysql user: 'root'
-          mysql password: 12345678
-
+    
       - name: Start testing
         working-directory: ./backend/Springboot
         run : mvn spring-boot:run
         timeout-minutes: 5
-        
