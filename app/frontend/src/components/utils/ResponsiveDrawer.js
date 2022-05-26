@@ -73,8 +73,7 @@ const ResponsiveDrawer = props => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h5">
-            <Typography className={classes.logoTypo} variant="h6">
+            <Typography className={classes.logoTypo} variant="h5">
               <img
                 src={Lasange}
                 className="nav-logo"
@@ -84,7 +83,6 @@ const ResponsiveDrawer = props => {
               />
               <span style={{ paddingLeft: '20px' }}>NTP</span>
             </Typography>
-          </Typography>
         </Toolbar>
       </AppBar>
         <SideDrawer 

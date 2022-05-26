@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import qa from "../landing/images/qa.png"
 import "./QADemo.css"
+import { Button } from '@material-ui/core';
+import download from 'downloadjs';
+import axios from 'axios';
 
 
 const useStyles = makeStyles(theme => ({
@@ -52,6 +55,30 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
+function generate_boilerplate(frontend="Angular", backend="Flask"){
+    var ApiURL = `http://localhost:5000/`;
+    return axios({
+            url: ApiURL + `generate/${frontend}/${backend}`,
+            method:'GET',
+            headers:{
+                'Content-Type': 'multipart/form-data',
+                withCredentials:true,
+
+
+            },
+            responseType:'arraybuffer' // If we don't mention we can't get data in desired format
+        })
+        .then(async response => {
+            console.log("got all files in api ");
+            // let blob = await new Blob([response.data], { type: 'application/zip' }) //It is optional
+
+            download(response.data,"NTP.zip","application/zip") //this is third party it will prompt download window in browser.
+
+            return response.data;
+        })
+}
+
+
 function QADemo() {
   const classes = useStyles();
 
@@ -73,6 +100,13 @@ function QADemo() {
                   </h4>
               </Grid>
             </Grid>
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={ () => generate_boilerplate("React","FastAPI") }
+            >
+                Download Combination
+            </Button>
             </Paper>
         </div>
     </div>

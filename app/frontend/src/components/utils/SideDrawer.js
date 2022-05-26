@@ -87,37 +87,37 @@ const SideDrawer = props => {
           <Divider className={classes.divider} />
           <List>
           <ListSubheader component="div">
-            CLOSED DOMAIN QA
+            WEBAPP-GENERATOR
           </ListSubheader>  
-          <ListItem button onClick={() => {pushLink('/QandAdocs')}}>
+          <ListItem button onClick={() => {pushLink('/WebAppdocs')}}>
                 <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="QA Documentation" />
+                <ListItemText primary="Documentation" />
               </ListItem>
-              <ListItem button onClick={() => {pushLink('/QandAdemo')}}>
-                <ListItemIcon><Avatar><AccountTreeIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="QA Architecture" />
+              <ListItem button onClick={() => {pushLink('/generate-WebApp')}}>
+                <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemText primary="Generate WebApp" />
               </ListItem>
           </List>
           <Divider className={classes.divider} />
           <List>
           <ListSubheader component="div">
-            CLOSED DOMAIN QG
+            MOBILEAPP-GENERATOR
           </ListSubheader>  
-          <ListItem button onClick={() => {pushLink('/CDQAdocs')}}>
+          <ListItem button onClick={() => {pushLink('/MobileAppdocs')}}>
                 <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="QG Documentation" />
+                <ListItemText primary="Documentation" />
               </ListItem>
-              <ListItem button onClick={() => {pushLink('/CDQAdemo')}}>
-                <ListItemIcon><Avatar><AccountTreeIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="QG Architecture" />
+              <ListItem button onClick={() => {pushLink('/generate-MobileApp')}}>
+                <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemText primary="Generate MobileApp" />
               </ListItem>
           </List>
           <Divider className={classes.divider} />
           <List>
-            <ListItem button onClick={() => {pushLink('/Demo')}}>
+            {/* <ListItem button onClick={() => {pushLink('/Demo')}}>
                 <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
                 <ListItemText primary="Demonstration" />
-            </ListItem>
+            </ListItem> */}
             <ListItem button >
               <ListItemIcon><Avatar><GitHubIcon fontSize='small' /></Avatar></ListItemIcon>
                 <Link href="https://github.com/Aerothon-NTP/boilerplate-gen"><ListItemText primary="Github Repository" /></Link>

@@ -15,12 +15,12 @@ import ResponsiveDrawer from "./components/utils/ResponsiveDrawer";
 import ModelApp from "./components/ModelPage/ModelApp"
 // import Console from "./components/utils/Console";
 import Landing from "./components/landing/Landing";
-import CDQAdocs from "./components/CDQA/Ask.js"
-import CDQAdemo from "./components/CDQA/AskDemo.js"
-import HTRdocs from "./components/HTR/Hand.js"
-import HTRdemo from "./components/HTR/HandDemo.js"
-import QAdocs from "./components/QA/QA.js"
-import QAdemo from "./components/QA/QADemo.js"
+import CDQAdocs from "./components/MobileApp/mobileappDocs.js"
+import CDQAdemo from "./components/MobileApp/mobileappDemo.js"
+// import HTRdocs from "./components/HTR/Hand.js"
+// import HTRdemo from "./components/HTR/HandDemo.js"
+import QAdocs from "./components/WebApp/webappDocs.js"
+import QAdemo from "./components/WebApp/webappDemo.js"
 import Dashboard from "./components/dashboard/Dashboard"
 import Activity from "./components/dashboard/Activity"
 import Subscribe from "./components/subscribe/subscribe.js"
@@ -57,7 +57,7 @@ const App = () => {
           <Activity />
         </ResponsiveDrawer>
       </Route>
-      <Route path="/HTRdocs" exact>
+      {/* <Route path="/HTRdocs" exact>
         <ResponsiveDrawer>
           <HTRdocs />
         </ResponsiveDrawer>
@@ -66,23 +66,23 @@ const App = () => {
         <ResponsiveDrawer>
           <HTRdemo />
         </ResponsiveDrawer>
-      </Route>
-      <Route path="/QandAdocs" exact>
+      </Route> */}
+      <Route path="/WebAppdocs" exact>
         <ResponsiveDrawer>
           <QAdocs />
         </ResponsiveDrawer>
       </Route>
-      <Route path="/QandAdemo" exact>
+      <Route path="/generate-WebApp" exact>
         <ResponsiveDrawer>
           <QAdemo />
         </ResponsiveDrawer>
       </Route>
-      <Route path="/CDQAdocs" exact>
+      <Route path="/MobileAppdocs" exact>
         <ResponsiveDrawer>
           <CDQAdocs />
         </ResponsiveDrawer>
       </Route>
-      <Route path="/CDQAdemo" exact>
+      <Route path="/generate-MobileApp" exact>
         <ResponsiveDrawer>
           <CDQAdemo />
         </ResponsiveDrawer>
