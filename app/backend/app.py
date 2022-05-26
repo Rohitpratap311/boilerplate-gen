@@ -35,10 +35,10 @@ def after_request(response):
 #-------------------------------- Routes ------------------------------------
 @app.get("/generate/<front>/<back>")
 def generate(front, back):
-    backend = str(os.path.abspath(os.path.dirname(PROJECT_ROOT)))+f"/backend/{back}"
-    frontend = str(os.path.abspath(os.path.dirname(PROJECT_ROOT)))+f"/frontend/{front}"
-
-    if not os.path.isdir(frontend) or os.path.isdir(backend):
+    backend = str(os.path.abspath(os.path.dirname(os.path.dirname(PROJECT_ROOT))))+f"/backend/{back}"
+    frontend = str(os.path.abspath(os.path.dirname(os.path.dirname(PROJECT_ROOT))))+f"/frontend/{front}"
+    
+    if not os.path.isdir(frontend) or not os.path.isdir(backend):
         return json.dumps({"status":"error", "message": "Tech-stack not found"})
     memory_file = BytesIO()
     with zipfile.ZipFile(memory_file, 'w', zipfile.ZIP_DEFLATED) as zipf:

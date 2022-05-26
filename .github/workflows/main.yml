@@ -28,19 +28,19 @@ jobs:
       uses: actions/cache@v2
       with:
         path: |
-          **/app/node_modules
-        key: ${{ runner.os }}-${{ hashFiles('**/app/package-lock.json') }}
+          **/app/frontend/node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/app/frontend/package-lock.json') }}
         
     - name: Install dependencies
-      working-directory: ./app
+      working-directory: ./app/frontend
       run: npm install
 
     - name: Predeploy
-      working-directory: ./app
+      working-directory: ./app/frontend
       run: npm run predeploy
 
     - name: Deploy
-      working-directory: ./app
+      working-directory: ./app/frontend
       run: |
         git config --global user.name $user_name
         git config --global user.email $user_email
