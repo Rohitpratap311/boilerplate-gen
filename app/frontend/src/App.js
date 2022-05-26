@@ -99,7 +99,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-        <Router>{routes}</Router>
+        <Router basename="boilerplate-gen">{routes}</Router>
     </ThemeProvider>
   );
 };
