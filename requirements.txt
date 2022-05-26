@@ -1,0 +1,3 @@
+# Only for Heroku
+
+-r app/backend/requirements.txt
