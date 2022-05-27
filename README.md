@@ -1,5 +1,5 @@
 # boilerplate-gen
-[![App: Site](https://img.shields.io/badge/App-Site-orange)](aerothon-ntp.github.io/boilerplate-gen/)
+[![App: Site](https://img.shields.io/badge/App-Site-orange)](https://aerothon-ntp.github.io/boilerplate-gen)
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/main.yml/badge.svg)
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/tests.yml/badge.svg)
 
