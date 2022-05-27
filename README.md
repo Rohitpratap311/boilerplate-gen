@@ -53,6 +53,7 @@ Run:
 
 You can use any frontend framework with this. This project uses SQLite in this project. Other databases can also be used easily. <a href="https://fastapi.tiangolo.com/tutorial/sql-databases/">Refer to this</a> for more information on how to use other databases with FastAPI.
 
+
 ## API endpoints:
 
 - Get all the todo items present in the database, send a get request on the following endpoint:
@@ -222,4 +223,17 @@ Build for production
 
 ### `ng build`
 
+## 7. Command Line Tool
+
+How to use the NTP Command line tool (Make sure you have python installed in your machine):
+
+**STEP 1:**  Download all the supporting packages using the following command
+
+### `pip install -r requirements.txt`
+
+<a href="https://github.com/Aerothon-NTP/boilerplate-gen/blob/document/cmd_tool/requirements.txt">Requirements file</a>
+
+**STEP 2:** You can run the Tool using
+
+### `python tool.py`
 
