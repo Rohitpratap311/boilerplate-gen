@@ -52,6 +52,20 @@ def generate(front, back):
     return send_file(memory_file, download_name='NTP.zip', as_attachment=True)
 
 
+@app.get("/cmd_toolkit")
+@cross_origin(supports_credentials=True)
+def cmd_toolkit():
+    tool = str(os.path.abspath(os.path.dirname(os.path.dirname(PROJECT_ROOT))))+f"/cmd_tool"
+    
+    if not os.path.isdir(tool):
+        return json.dumps({"status":"error", "message": "CMD Toolkit not found"})
+    memory_file = BytesIO()
+    with zipfile.ZipFile(memory_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        zipdir(tool, zipf)
+    memory_file.seek(0)
+    return send_file(memory_file, download_name='cmd_toolkit.zip', as_attachment=True)
+
+
 
 if __name__ == "__main__":
     app.run(port=os.environ.get("PORT", 5000))

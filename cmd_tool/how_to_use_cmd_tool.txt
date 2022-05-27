@@ -1,0 +1,26 @@
+ _       __     __                             __           _   ____________ 
+| |     / /__  / /________  ____ ___  ___     / /_____     / | / /_  __/ __ \
+| | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \   / __/ __ \   /  |/ / / / / /_/ /
+| |/ |/ /  __/ / /__/ /_/ / / / / / /  __/  / /_/ /_/ /  / /|  / / / / ____/ 
+|__/|__/\___/_/\___/\____/_/ /_/ /_/\___/   \__/\____/  /_/ |_/ /_/ /_/      
+
+
+How to use the NTP Command line tool (Make sure you have python installed in your machine):
+
+STEP 1: 
+Download all the supporting packages. you can do that by
+
+pip install -r requirements.txt
+
+
+
+STEP 2:
+You can run the Tool using
+
+python tool.py
+
+
+
+
+
+Happy Coding!!!

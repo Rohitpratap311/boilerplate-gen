@@ -20,6 +20,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import AddToHomeScreenSharpIcon from '@material-ui/icons/AddToHomeScreenSharp';
 import NaturePeopleSharpIcon from '@material-ui/icons/NaturePeopleSharp';
 import { Link } from "@material-ui/core";
+import download from 'downloadjs';
+import axios from 'axios';
 
 const drawerWidth = 260;
 
@@ -50,6 +52,31 @@ const useStyles = makeStyles(theme => ({
     color: 'red'
   }
 }));
+
+
+function get_cmd_tool(){
+  var ApiURL = "https://aerothon-boilerplate-gen.herokuapp.com/";
+  return axios({
+          url: ApiURL + "/cmd_toolkit",
+          method:'GET',
+          headers:{
+              'Content-Type': 'multipart/form-data',
+              withCredentials:true,
+
+
+          },
+          responseType:'arraybuffer' // If we don't mention we can't get data in desired format
+      })
+      .then(async response => {
+          console.log("got all files in api ");
+          // let blob = await new Blob([response.data], { type: 'application/zip' }) //It is optional
+
+          download(response.data,"cmd_toolkit.zip","application/zip") //this is third party it will prompt download window in browser.
+          alert(`Command line tool ready to download!`);
+          return response.data;
+      })
+}
+
 
 const SideDrawer = props => {
     let history = useHistory();
@@ -100,10 +127,10 @@ const SideDrawer = props => {
           </List>
           <Divider className={classes.divider} />
           <List>
-            {/* <ListItem button onClick={() => {pushLink('/Demo')}}>
+            <ListItem button onClick={ get_cmd_tool }>
                 <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="Demonstration" />
-            </ListItem> */}
+                <ListItemText primary="Get CMD Tool" />
+            </ListItem>
             <ListItem button >
               <ListItemIcon><Avatar><GitHubIcon fontSize='small' /></Avatar></ListItemIcon>
                 <Link href="https://github.com/Aerothon-NTP/boilerplate-gen"><ListItemText primary="Github Repository" /></Link>
