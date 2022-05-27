@@ -19,6 +19,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AddToHomeScreenSharpIcon from '@material-ui/icons/AddToHomeScreenSharp';
 import NaturePeopleSharpIcon from '@material-ui/icons/NaturePeopleSharp';
+import { BsFillTerminalFill } from "react-icons/bs";
 import { Link } from "@material-ui/core";
 import download from 'downloadjs';
 import axios from 'axios';
@@ -128,7 +129,7 @@ const SideDrawer = props => {
           <Divider className={classes.divider} />
           <List>
             <ListItem button onClick={ get_cmd_tool }>
-                <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemIcon><Avatar><BsFillTerminalFill fontSize='small' /></Avatar></ListItemIcon>
                 <ListItemText primary="Get CMD Tool" />
             </ListItem>
             <ListItem button >
