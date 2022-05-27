@@ -87,7 +87,7 @@ const SideDrawer = props => {
           <Divider className={classes.divider} />
           <List>
           <ListSubheader component="div">
-            WEBAPP-GENERATOR
+            TEMPLATE-GENERATOR
           </ListSubheader>  
           <ListItem button onClick={() => {pushLink('/WebAppdocs')}}>
                 <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
@@ -95,21 +95,7 @@ const SideDrawer = props => {
               </ListItem>
               <ListItem button onClick={() => {pushLink('/generate-WebApp')}}>
                 <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="Generate WebApp" />
-              </ListItem>
-          </List>
-          <Divider className={classes.divider} />
-          <List>
-          <ListSubheader component="div">
-            MOBILEAPP-GENERATOR
-          </ListSubheader>  
-          <ListItem button onClick={() => {pushLink('/MobileAppdocs')}}>
-                <ListItemIcon><Avatar><AssignmentIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="Documentation" />
-              </ListItem>
-              <ListItem button onClick={() => {pushLink('/generate-MobileApp')}}>
-                <ListItemIcon><Avatar><NaturePeopleSharpIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="Generate MobileApp" />
+                <ListItemText primary="Generate BoilerPlate" />
               </ListItem>
           </List>
           <Divider className={classes.divider} />

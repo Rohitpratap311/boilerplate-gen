@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import qa from "../landing/images/qa.png"
-import "./QADemo.css"
+// import qa from "../landing/images/qa.png"
+import "./webapp.css"
 import { Button } from '@material-ui/core';
 import download from 'downloadjs';
 import axios from 'axios';
@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
 
 
 function generate_boilerplate(frontend="Angular", backend="Flask"){
-    var ApiURL = `http://localhost:5000/`;
+    var ApiURL = `https://aerothon-boilerplate-gen.herokuapp.com/`;
     return axios({
             url: ApiURL + `generate/${frontend}/${backend}`,
             method:'GET',
@@ -73,7 +73,7 @@ function generate_boilerplate(frontend="Angular", backend="Flask"){
             // let blob = await new Blob([response.data], { type: 'application/zip' }) //It is optional
 
             download(response.data,"NTP.zip","application/zip") //this is third party it will prompt download window in browser.
-
+            alert(`BoilerPlate Successfully generated! (Frontend: ${frontend}, Backend: ${backend})`);
             return response.data;
         })
 }
@@ -81,32 +81,103 @@ function generate_boilerplate(frontend="Angular", backend="Flask"){
 
 function QADemo() {
   const classes = useStyles();
+  const initialValues = { dev:"WebApp", frontend: "React", backend: "FastAPI", db:"Localdb"}
+  const [formValues, setFormValues] = useState(initialValues);
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+    console.log(formValues);
+  };
+
+
+  const handleSubmit = (event) => {
+    console.log(formValues);
+    event.preventDefault();
+    generate_boilerplate(formValues.frontend, formValues.backend);
+    setSuccess(true);
+    setTimeout(() => {
+      setSuccess(false);
+    }, 3000);
+  };
+
 
   return (
     <div style={{ textAlign: "center", padding: "40px" }}>
-      <h1 style={{ color: "Lightgreen" }}>QUESTION ANSWERING (Q.A.) MODEL ARCHITECTURE</h1>
+      <h1 style={{ color: "Lightgreen" }}>Jumpstart your Development with us!!</h1>
+      <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
       <div className={classes.container}>
-          <Paper square>
-          <Grid container>
-              <Grid style={{ backgroundColor: '#d6dffe'}} item md={12} sm={12} xs={12}>
-                  <img src={ qa } className="start-img" alt="landing_image" />
-                  <h2>Fig.3. Question Answering Architecture</h2>
-              </Grid>
-              <Grid item md={12} sm={12} xs={12} style={{ padding: "20px" }}>
-                  <h4 style={{ textAlign: "left" }}>
-                  <p>Given a document, assuming that not every sentence or paragraph is relevant to the query, not all metadata needs to follow the Q.A. pipeline. With the help of a probabilistic relevance model, the document can be filtered and eliminate a majority of the text by ranking texts/documents based on the relevance with a given search query. The Okapi(BM25), a weighting scheme framework, the best-known derivative of the probabilistic relevance model, can rank the text and efficiently query only the informative and relevant text.</p>
-                  <p>A neural network-based deep learning model for performing N.L.P. tasks, trained on the S.Q.U.A.D.2.0 dataset, can accurately extract the selected content is required to answer. B.E.R.T. [13][15] (Bidirectional Encoder Representations from Transformers), A.L.B.E.R.T. (Acoustic and Laryngeal Biofeedback Enhancement Real-Time), E.L.E.C.T.R.A. (Efficiently Learning an Encoder that Classifies Token Replacements Accurately), Etc. are some of the widely accepted architecture designs for the Q.A. task.</p>
-                  <p>The given architecture can be built on top of any existing Q.A. models to increase its efficiency.</p>
-                  </h4>
-              </Grid>
-            </Grid>
-            <Button
-                variant="contained"
-                color="primary"
-                onClick={ () => generate_boilerplate("React","FastAPI") }
-            >
-                Download Combination
-            </Button>
+            <Paper square style={{ padding: "30px"}}>
+            <form onSubmit={handleSubmit}>
+                <Grid container>
+                    <Grid md={6} sm={6} style={{ padding: "20px" }}>
+                        <label style={{ display: "block", padding: "5px" }}>Type of Development</label>
+                        <div class="select-dropdown">
+                            <select
+                                name="dev"
+                                onChange={handleChange}
+                            >
+                                <option value="WebApp">Web Development</option>
+                                <option value="MobileApp">Mobile Development</option>
+                                <option value="AR_VR">AR/VR (coming soon)</option>
+                            </select>
+                        </div>
+                    </Grid>
+                    
+                    <Grid md={6} sm={6} style={{ padding: "20px" }}>
+                        <label style={{ display: "block", padding: "5px" }}>Frontend FrameWork</label>
+                        <div class="select-dropdown">
+                            <select
+                                name="frontend"
+                                onChange={handleChange}
+                            >
+                                <option value="React">React JS</option>
+                                <option value="Angular">Angular JS</option>
+                                <option value="HTML">HTML 5(coming soon)</option>
+                                <option value="Flutter">Flutter (coming soon)</option>
+                                <option value="ReactNative">React Native (coming soon)</option>
+                            </select>
+                        </div>
+                    </Grid>
+
+                    <Grid md={6} sm={6} style={{ padding: "20px" }}>
+                        <label style={{ display: "block", padding: "5px" }}>Backend FrameWork</label>
+                        <div class="select-dropdown">
+                            <select
+                                name="backend"
+                                onChange={handleChange}
+                            >
+                                <option value="FastAPI">FastAPI</option>
+                                <option value="Flask">Flask</option>
+                                <option value="Springboot">SpringBoot</option>
+                                <option value="NodeJS">NodeJS (coming soon)</option>
+                            </select>
+                        </div>
+                    </Grid>
+
+                    <Grid md={6} sm={6} style={{ padding: "20px" }}>
+                        <label style={{ display: "block", padding: "5px" }}>Database</label>
+                        <div class="select-dropdown">
+                            <select
+                                name="db"
+                                onChange={handleChange}
+                            >
+                                <option value="localDB">LocalDB</option>
+                                <option value="SQL">SQL</option>
+                            </select>
+                        </div>
+                    </Grid>
+                </Grid>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                    // onClick={ () => generate_boilerplate("React","FastAPI") }
+                >
+                    Download Combination
+                </Button>
+            </form>
             </Paper>
         </div>
     </div>
