@@ -235,5 +235,5 @@ How to use the NTP Command line tool (Make sure you have python installed in you
 
 **STEP 2:** You can run the Tool using
 
-### `python tool.py`
+### `python tool.py` 
 
