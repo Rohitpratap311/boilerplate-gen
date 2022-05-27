@@ -10,14 +10,14 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "@material-ui/core";
-import amcharts  from "./images/amcharts.png"
+import Flutter  from "./images/flutter.jpeg"
 import flask from "./images/flask.png"
-import materialui from "./images/materialui.png"
+import springboot from "./images/springboot.png"
 import reactjs from "./images/reactjs.png"
-import tensorflow from "./images/tensorflow.png"
-import PyTorch from "./images/Pytorch.png"
-import whatsapp from "./images/whatsapp.png"
-import twilio from "./images/twilio.jpg"
+import angular from "./images/angular.jpg"
+import fastapi from "./images/fastapi.jpg"
+import ReactNative from "./images/ReactNative.jpg"
+import mySQL from "./images/mySQL.jpg"
 
 
 const useStyles = makeStyles({
@@ -52,48 +52,22 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={tensorflow}
-                title="Tensorflow JS"
+                image={angular}
+                title="Angular JS"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  TensorFlow
+                  Angular JS
                 </Typography>
                 <Typography variant="body2" component="p">
-                  TensorFlow is an hardware-accelerated library for training and deploying ML models, based on differentiable programming.
+                  A JavaScript-based open-source front-end web framework for developing single-page applications.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               {/* <Link to="https://www.tensorflow.org/js" > */}
               <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://tensorflow.org/">See More</Link>
-              </Button>
-              {/* </Link>  */}
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid className={classes.grid} item xs={12} sm={6} md={3} lg={3}>
-          <Card className={classes.cardHeight} spacing={4}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={PyTorch}
-                title="PyTorch"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  PyTorch
-                </Typography>
-                <Typography variant="body2" component="p">
-                  It is an open source ML library based on the Torch library, used for computer vision, natural language processing, Etc.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              {/* <Link to="https://www.tensorflow.org/js" > */}
-              <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://pytorch.org">See More</Link>
+                <Link className={classes.Link} href="https://angular.io/">See More</Link>
               </Button>
               {/* </Link>  */}
             </CardActions>
@@ -131,6 +105,32 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
+                image={fastapi}
+                title="FastAPI"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  FastAPI
+                </Typography>
+                <Typography variant="body2" component="p">
+                  A Web framework for developing RESTful APIs in Python. FastAPI is based on Pydantic and type hints to validate & serialize data.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              {/* <Link to="https://www.tensorflow.org/js" > */}
+              <Button size="small" color="primary">
+                <Link className={classes.Link} href="https://fastapi.tiangolo.com/">See More</Link>
+              </Button>
+              {/* </Link>  */}
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid className={classes.grid} item xs={12} sm={6} md={3} lg={3}>
+          <Card className={classes.cardHeight} spacing={4}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
                 image={flask}
                 title="Flask"
               />
@@ -155,23 +155,22 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={materialui}
+                image={springboot}
                 title="Material UI"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Material UI
+                  SpringBoot
                 </Typography>
                 <Typography variant="body2" component="p">
-                  Material UI provides React components implementing <Link className={classes.Link} href="https://material.io/">Google's Material Design</Link>
-                  specification
+                  The Spring Framework is an application framework and inversion of control container for the Java platform.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               {/* <Link to="https://www.tensorflow.org/js" > */}
               <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://material-ui.com/">See More</Link>
+                <Link className={classes.Link} href="https://spring.io/">See More</Link>
               </Button>
               {/* </Link>  */}
             </CardActions>
@@ -182,22 +181,22 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={amcharts}
-                title="AMcharts"
+                image={Flutter}
+                title="Flutter"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  AMcharts
+                  Flutter
                 </Typography>
                 <Typography variant="body2" component="p">
-                  A go-to library for data visualization. When you need a simple yet powerful and flexible drop-in data visualization solution.
+                  An open-source UI software development kit created by Google. It is used to develop cross platform applications.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               {/* <Link to="https://www.tensorflow.org/js" > */}
               <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://amcharts.com/">See More</Link>
+                <Link className={classes.Link} href="https://flutter.dev/">See More</Link>
               </Button>
               {/* </Link>  */}
             </CardActions>
@@ -208,22 +207,22 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={whatsapp}
-                title="WhatsApp"
+                image={ReactNative}
+                title="ReactNative"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  WhatsApp
+                  React-Native
                 </Typography>
                 <Typography variant="body2" component="p">
-                  It is an American freeware, cross-platform centralized messaging and voice-over-IP service owned by Facebook.
+                  An open-source UI software framework created by Meta Platforms. It is used to develop cross-platform applications.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               {/* <Link to="https://www.tensorflow.org/js" > */}
               <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://whatsapp.com/">See More</Link>
+                <Link className={classes.Link} href="https://reactnative.dev/">See More</Link>
               </Button>
               {/* </Link>  */}
             </CardActions>
@@ -234,22 +233,22 @@ const Techstack = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={twilio}
-                title="Twilio API"
+                image={mySQL}
+                title="mySQL"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Twilio API
+                  MySQL
                 </Typography>
                 <Typography variant="body2" component="p">
-                  It allows programmatical phone calls, text messages, and perform other communication functions using its web service APIs.
+                  MySQL is a widely used relational database management system (RDBMS). It is free and open-source.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               {/* <Link to="https://www.tensorflow.org/js" > */}
               <Button size="small" color="primary">
-                <Link className={classes.Link} href="https://twilio.com/">See More</Link>
+                <Link className={classes.Link} href="https://www.mysql.com/">See More</Link>
               </Button>
               {/* </Link>  */}
             </CardActions>

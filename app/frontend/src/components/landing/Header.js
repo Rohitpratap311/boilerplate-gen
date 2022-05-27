@@ -15,7 +15,7 @@ import { useHistory } from "react-router-dom";
 
 import "./Header.css";
 // import logo from "./images/logo.png"
-import logo from "./images/robot1.png"
+import logo from "./images/NTP.png"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -96,7 +96,7 @@ const BackToTop = props => {
             height="30"
           />
         <Typography className={classes.logoTypo}>
-          NTP
+          Noob-To-Pro
         </Typography>
         <span className={classes.iconContainer}>
           <Button variant="h6">

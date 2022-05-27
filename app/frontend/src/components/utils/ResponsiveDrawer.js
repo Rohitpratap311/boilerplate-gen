@@ -11,7 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Lasange from '../landing/images/robot1.png'
+import Logo from '../landing/images/NTP.png'
 
 const drawerWidth = 240;
 
@@ -75,13 +75,13 @@ const ResponsiveDrawer = props => {
           </IconButton>
             <Typography className={classes.logoTypo} variant="h5">
               <img
-                src={Lasange}
+                src={Logo}
                 className="nav-logo"
                 alt="Logo"
                 width="30"
                 height="30"
               />
-              <span style={{ paddingLeft: '20px' }}>NTP</span>
+              <span style={{ paddingLeft: '20px' }}>Noob-To-Pro</span>
             </Typography>
         </Toolbar>
       </AppBar>

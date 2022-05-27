@@ -95,8 +95,13 @@ function QADemo() {
   const handleSubmit = (event) => {
     console.log(formValues);
     event.preventDefault();
-    generate_boilerplate(formValues.frontend, formValues.backend);
-    setIsSubmit(true);
+    if (formValues.dev === "AR_VR"|| formValues.frontend === "HTML5" || formValues.backend === "NodeJS" || formValues.db === "MongoDB"){
+        alert("Select Available Techstacks!")
+        setIsSubmit(false);
+    } else{
+        generate_boilerplate(formValues.frontend, formValues.backend);
+        setIsSubmit(true);
+    }
   };
 
 
@@ -105,7 +110,7 @@ function QADemo() {
       <h1 style={{ color: "Lightgreen" }}>Jumpstart your Development with us!!</h1>
       <div className={classes.container}>
             <Paper square style={{ padding: "30px"}}>
-            { isSubmit ? (
+            { isSubmit && (formValues.dev !== "AR_VR"|| formValues.frontend !== "HTML5" || formValues.backend !== "NodeJS" || formValues.db !== "MongoDB") ? (
                 <h3 style={{ color: "white" }}>BoilerPlate Successfully Generated and Downloaded!!</h3>
             ) : (
                 <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
@@ -129,16 +134,34 @@ function QADemo() {
                     <Grid md={6} sm={6} style={{ padding: "20px" }}>
                         <label style={{ display: "block", padding: "5px" }}>Frontend FrameWork</label>
                         <div class="select-dropdown">
-                            <select
-                                name="frontend"
-                                onChange={handleChange}
-                            >
-                                <option value="React">React JS</option>
-                                <option value="Angular">Angular JS</option>
-                                <option value="HTML">HTML 5(coming soon)</option>
-                                <option value="Flutter">Flutter (coming soon)</option>
-                                <option value="ReactNative">React Native (coming soon)</option>
-                            </select>
+                            { formValues.dev === "WebApp" ? (
+                                <select
+                                    name="frontend"
+                                    onChange={handleChange}
+                                >
+                                    <option value="React">React JS</option>
+                                    <option value="Angular">Angular JS</option>
+                                    <option value="HTML">HTML 5(coming soon)</option>
+                                </select>
+                            ) : formValues.dev === "MobileApp" ? (
+                                <select
+                                    name="frontend"
+                                    onChange={handleChange}
+                                >
+                                    <option value="Flutter">Flutter (coming soon)</option>
+                                    <option value="ReactNative">React Native (coming soon)</option>
+                                </select>
+                            ) : (
+                                <select
+                                    name="frontend"
+                                    onChange={handleChange}
+                                >
+                                    {/* <option value="Flutter">Flutter (coming soon)</option>
+                                    <option value="ReactNative">React Native (coming soon)</option> */}
+                                </select>
+                            )}
+                                
+                            {/* </select> */}
                         </div>
                     </Grid>
 
@@ -160,13 +183,28 @@ function QADemo() {
                     <Grid md={6} sm={6} style={{ padding: "20px" }}>
                         <label style={{ display: "block", padding: "5px" }}>Database</label>
                         <div class="select-dropdown">
-                            <select
-                                name="db"
-                                onChange={handleChange}
-                            >
-                                <option value="localDB">LocalDB</option>
-                                <option value="SQL">SQL</option>
-                            </select>
+                            { formValues.backend === "FastAPI"|| formValues.backend === "Flask" ? (
+                                <select
+                                    name="db"
+                                    onChange={handleChange}
+                                >
+                                    <option value="localDB">LocalDB</option>
+                                </select>
+                            ): formValues.backend === "Springboot" ? (
+                                <select
+                                    name="db"
+                                    onChange={handleChange}
+                                >
+                                    <option value="SQL">MySQL</option>
+                                </select>
+                            ): (
+                                <select
+                                    name="db"
+                                    onChange={handleChange}
+                                >
+                                    <option value="MongoDB">MongoDB(coming soon)</option>
+                                </select>
+                            )}
                         </div>
                     </Grid>
                 </Grid>

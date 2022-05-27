@@ -56,7 +56,7 @@ const Landing = () => {
 									A jumpstart on the development process
 								</li>
 								<li>
-									freedom of choice on the Tech-Stacks
+									Freedom of choice on the Tech-Stacks
 								</li>
 								<li>
 									Implements best practices and principles
@@ -110,28 +110,14 @@ const Landing = () => {
 							style={{ paddingLeft: "20px", textAlign: "left" }}
 						>
 							<h1 style={{ color: "lightgreen" }}>
-								Virtual assistance using question generation/
-								Answering
+								A cross-platform UI toolkit that targets the mobile, web and desktop form factors on Android, iOS, macOS, Windows.
 							</h1>
 							<h3 style={{ color: "gray" }}>
-								Question Generation and Answering, being a
-								challenging task, has gained considerable
-								attention in the past years. Even though
-								significant milestones are achieved, when used
-								in a real-time system, it needs indispensable
-								optimization. This paper proposes an approach to
-								developing an online platform that facilitates
-								traditional processes by introducing a virtual
-								assistant to support educational programs by
-								asking questions in natural language and getting
-								an answer without reading the internal documents
-								relevant to the problem. The system put forward
-								is a cloud-based solution that automatically
-								generates questions and provides sample answers
-								from a given document(s). The entire
-								architecture integrated into the WhatsApp
-								interface with Twilio API's help offers a
-								user-friendly experience.
+								NTP(Noob-To-Pro) is web application to create a strong cross-platform framework with the modern architecture. 
+								A developer platform for building all kinds of web, mobile and desktop applications 
+								across different frameworks based on the requirement which also showcases the basic integration 
+								between frontend and backend of the application. This innovative application is build using a layered approach 
+								with Multi-Tenancy, Modular Design, and well-documented with Solid Principles to support these applications.
 							</h3>
 						</Grid>
 						<Grid

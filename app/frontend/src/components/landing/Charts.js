@@ -23,16 +23,20 @@ const PieChart = () => {
 
 		chart.data = [
 			{
-				feature: "Closed Domain Question Answering",
+				feature: "Web Development",
 				detected: 201,
 			},
 			{
-				feature: "Closed Domain Question Generation",
+				feature: "Mobile Development",
 				detected: 161,
 			},
 			{
-				feature: "Document Summarization",
-				detected: 121,
+				feature: "AR/VR Reality Platform",
+				detected: 69,
+			},
+			{
+				feature: "Big Data using AI bots",
+				detected: 80,
 			},
 		];
 
@@ -87,7 +91,7 @@ const WordChart = () => {
 		series.labels.template.margin(4, 4, 4, 4);
 		series.maxFontSize = am4core.percent(30);
 
-		series.text = "Create a web application that lets you build native apps using a cross-platform UI toolkit that targets the mobile, web and desktop form factors on Android, iOS, macOS, Windows. Overview Build a web application to create a strong cross-platform framework with modern architecture. A developer platform for building all kinds of web, mobile and desktop applications across different frameworks based on the requirement which will also showcase the basic integration between frontend and backend of the application. You must build an application that is innovative using a layered approach with Multi-Tenancy, Modular Design, and well-documented with Solid Principles to support web applications. Implement best practices and principles Participants have the leniency to develop some of these new features and technologies for the brownie points GO Language for the IT infrastructure Implementing multilingual feature";
+		series.text = "web application build native apps cross platform UI toolkit that targets the mobile, web and desktop form factors on Android, iOS, macOS, Windows. Build a web application strong cross-platform framework with modern architecture. A developer platform for building all kinds of web, mobile and desktop applications across different frameworks based on the requirement which will also showcase the basic integration between frontend and backend of the application. You must build an application that is innovative using a layered approach with Multi-Tenancy, Modular Design, and well-documented with Solid Principles to support web applications. Implement best practices and principles Participants have the leniency to develop some of these new features and technologies for the brownie points GO Language for the IT infrastructure Implementing multilingual feature";
 
 		series.colors = new am4core.ColorSet();
 		series.colors.passOptions = {}; // makes it loop
