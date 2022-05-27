@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build: frontend/React
+    
+    ports:
+      - "3000:3000"
+    
+    depends_on:
+      - backend
+
+  backend:
+    build: backend/Flask
+    ports:
+      - "5000:5000"
+
