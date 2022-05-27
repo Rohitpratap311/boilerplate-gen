@@ -83,7 +83,7 @@ function QADemo() {
   const classes = useStyles();
   const initialValues = { dev:"WebApp", frontend: "React", backend: "FastAPI", db:"Localdb"}
   const [formValues, setFormValues] = useState(initialValues);
-  const [success, setSuccess] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,19 +96,20 @@ function QADemo() {
     console.log(formValues);
     event.preventDefault();
     generate_boilerplate(formValues.frontend, formValues.backend);
-    setSuccess(true);
-    setTimeout(() => {
-      setSuccess(false);
-    }, 3000);
+    setIsSubmit(true);
   };
 
 
   return (
     <div style={{ textAlign: "center", padding: "40px" }}>
       <h1 style={{ color: "Lightgreen" }}>Jumpstart your Development with us!!</h1>
-      <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
       <div className={classes.container}>
             <Paper square style={{ padding: "30px"}}>
+            { isSubmit ? (
+                <h3 style={{ color: "white" }}>BoilerPlate Successfully Generated and Downloaded!!</h3>
+            ) : (
+                <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
+            )}
             <form onSubmit={handleSubmit}>
                 <Grid container>
                     <Grid md={6} sm={6} style={{ padding: "20px" }}>
