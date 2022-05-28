@@ -110,7 +110,7 @@ function QADemo() {
       <h1 style={{ color: "Lightgreen" }}>Jumpstart your Development with us!!</h1>
       <div className={classes.container}>
             <Paper square style={{ padding: "30px"}}>
-            { isSubmit && (formValues.dev !== "AR_VR"|| formValues.frontend !== "HTML5" || formValues.backend !== "NodeJS" || formValues.db !== "MongoDB") ? (
+            { isSubmit && (formValues.dev !== "AR_VR"|| formValues.frontend !== "HTML5" || formValues.frontend !== "ReactNative" || formValues.frontend !== "Flutter" || formValues.db !== "MongoDB") ? (
                 <h3 style={{ color: "white" }}>BoilerPlate Successfully Generated and Downloaded!!</h3>
             ) : (
                 <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
@@ -175,7 +175,7 @@ function QADemo() {
                                 <option value="FastAPI">FastAPI</option>
                                 <option value="Flask">Flask</option>
                                 <option value="Springboot">SpringBoot</option>
-                                <option value="NodeJS">NodeJS (coming soon)</option>
+                                <option value="NodeJS">NodeJS</option>
                             </select>
                         </div>
                     </Grid>
@@ -202,6 +202,7 @@ function QADemo() {
                                     name="db"
                                     onChange={handleChange}
                                 >
+                                    <option value="SQL">SQLlite</option>
                                     <option value="MongoDB">MongoDB(coming soon)</option>
                                 </select>
                             )}
