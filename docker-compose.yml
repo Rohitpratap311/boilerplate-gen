@@ -1,6 +1,6 @@
 services:
   frontend:
-    build: frontend/React
+    build: frontend/{frontend}
     
     ports:
       - "3000:3000"
@@ -9,7 +9,7 @@ services:
       - backend
 
   backend:
-    build: backend/Flask
+    build: backend/{backend}
     ports:
       - "5000:5000"
 

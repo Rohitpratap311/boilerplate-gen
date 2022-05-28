@@ -46,7 +46,9 @@
 ## 1. Docker
 Change docker-compose.yml as required by your tech stack
 
-As a sample React X Flask is already given.
+For example React x Flask, make the following changes in docker-compose.yml:
+- {fronted} -> React
+- {backend} -> Flask 
 
 Run:
 - Start the app
