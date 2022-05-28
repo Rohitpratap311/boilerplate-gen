@@ -7,7 +7,7 @@
 
 - This repo houses the assests used to built the web application **boilerplate-gen** for **Aerothon 4.0** organized by **Airbus** at **Hackerearth**.
 - This web application enables the user to build natives apps using a **cross platform UI** toolkit .
-- The backend for this appliaction is hosted with **hikaru** and the frontend is hosted with **github pages**.
+- The backend for this appliaction is hosted with **heroku** and the frontend is hosted with **github pages**.
 - **SQLite** database has been used.
 
 <br>
@@ -16,7 +16,7 @@
 
 - **CI/CD** pipeline is used to **automate the software delivery process**. 
 - It builds code, runs tests (CI), and safely deploys a new version of the application (CD) .
-- It remove manual errors, provide standardized feedback loops to developers, and enable fast product iterations.
+- It removes manual errors, provide standardized feedback loops to developers, and enable fast product iterations.
 
 <br>
 
@@ -255,5 +255,15 @@ How to use the NTP Command line tool (Make sure you have python installed in you
 
 **STEP 2:** You can run the Tool using
 
-### `python tool.py` 
+### `python tool.py`
 
+    
+## 8. Testing
+    
+Tests are end to end, python automatically starts the server and makes requests to the backend for testsing
+
+Run:
+        pytest tests/test_{backend}.py -s
+
+Also for custom tests for your project, please alter the templates.py accordingly and those tests will be run.
+    
