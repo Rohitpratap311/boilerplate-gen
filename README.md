@@ -3,23 +3,43 @@
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/main.yml/badge.svg)
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/tests.yml/badge.svg)
 
+<br>
 
-## Features Done:
-- CI/CD => for deployment of web app and tests
-- Web app
-- Frontend
-    - React, Angular and React - Native
+- This repo houses the assests used to built the web application **boilerplate-gen** for **Aerothon 4.0** organized by **Airbus** at **Hackerearth**.
+- This web application enables the user to build natives apps using a **cross platform UI** toolkit .
+- The backend for this appliaction is hosted with **hikaru** and the frontend is hosted with **github pages**.
+- **SQLite** database has been used .
 
-- Backend
-    - Flask, FastAPI, SpringBoot and NodeJS
+<br>
 
-- Command line utility
-- Heroku hosting
-- Dockerised all the components ( also including dockercompose)
-- Test - Test templates for testing backends
-- SQLITE DB
-- Zip download
-<img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/document/Resourecs/Generate%20BoilerPlate.png" width="128"/>
+## Dev :
+
+- **CI/CD** pipeline is used to **automate the software delivery process**. 
+- It builds code, runs tests (CI), and safely deploys a new version of the application (CD) .
+- It remove manual errors, provide standardized feedback loops to developers, and enable fast product iterations.
+
+<br>
+
+## Tools :
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80"/> <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="80" height="80"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="80" height="80"/> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80" height="80"/> </a>
+
+<br>
+    
+## Features :
+    
+- This web application allows the user to download varoius **integrated combination** of frontend and backend template of a **todo application** supports **CRUD(Create,Read,Update,Delete)** operations and user can create any native application on the top of that.    
+- It supports the following frameworks (as of now ): 
+    - Frontend : React, Angular and React - Native
+    - Backend  : Flask, FastAPI, SpringBoot and NodeJS 
+- Requirement and dependencies for each framework is very **well documented**.
+- This allows user to create 12 templates (more coming soon).
+- It supports **command line utility** so the the user can directly download templates from terminal.
+- All the components are **dockerised** ( also including dockercompose).
+- We have created **test templates** for testing backends frameworks.
+- This application provides a easy to use graphical **User Interface** so that anyone can use it and **download the ZIP file** for templates. 
+
+<br> <img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/document/Resourecs/Generate%20BoilerPlate.png" /> <br>
 
 # Requirements for using different frameworks and tools :
 
