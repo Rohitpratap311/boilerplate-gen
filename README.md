@@ -8,7 +8,7 @@
 - This repo houses the assests used to built the web application **boilerplate-gen** for **Aerothon 4.0** organized by **Airbus** at **Hackerearth**.
 - This web application enables the user to build natives apps using a **cross platform UI** toolkit .
 - The backend for this appliaction is hosted with **hikaru** and the frontend is hosted with **github pages**.
-- **SQLite** database has been used .
+- **SQLite** database has been used.
 
 <br>
 
