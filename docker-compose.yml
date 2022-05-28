@@ -1,6 +1,6 @@
 services:
   frontend:
-    build: frontend/{frontend}
+    build: {frontend}
     
     ports:
       - "3000:3000"
@@ -9,7 +9,7 @@ services:
       - backend
 
   backend:
-    build: backend/{backend}
+    build: {backend}
     ports:
       - "5000:5000"
 
