@@ -3,52 +3,30 @@
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/main.yml/badge.svg)
 ![Build](https://github.com/Aerothon-NTP/boilerplate-gen/actions/workflows/tests.yml/badge.svg)
 
-<br>
 
-- This repo houses the assests used to built the web application **boilerplate-gen** for **Aerothon 4.0** organized by **Airbus** at **Hackerearth**.
-- This web application enables the user to build natives apps using a **cross platform UI** toolkit .
-- The backend for this appliaction is hosted with **heroku** and the frontend is hosted with **github pages**.
-- **SQLite** database has been used.
+## Features Done:
+- CI/CD => for deployment of web app and tests
+- Web app
+- Frontend
+    - React, Angular and React - Native
 
-<br>
+- Backend
+    - Flask, FastAPI, SpringBoot and NodeJS
 
-## Dev :
-
-- **CI/CD** pipeline is used to **automate the software delivery process**. 
-- It builds code, runs tests (CI), and safely deploys a new version of the application (CD) .
-- It removes manual errors, provide standardized feedback loops to developers, and enable fast product iterations.
-
-<br>
-
-## Tools :
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80"/> <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="80" height="80"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="80" height="80"/> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80" height="80"/> </a>
-
-<br>
-    
-## Features :
-    
-- This web application allows the user to download varoius **integrated combination** of frontend and backend template of a **todo application** supports **CRUD(Create,Read,Update,Delete)** operations and user can create any native application on the top of that.    
-- It supports the following frameworks (as of now ): 
-    - Frontend : React, Angular and React - Native
-    - Backend  : Flask, FastAPI, SpringBoot and NodeJS 
-- Requirement and dependencies for each framework is very **well documented**.
-- This allows user to create 12 templates (more coming soon).
-- It supports **command line utility** so the the user can directly download templates from terminal.
-- All the components are **dockerised** ( also including dockercompose).
-- We have created **test templates** for testing backends frameworks.
-- This application provides a easy to use graphical **User Interface** so that anyone can use it and **download the ZIP file** for templates. 
-
-<br> <img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/main/Resourecs/Generate%20BoilerPlate.png" /> <br>
+- Command line utility
+- Heroku hosting
+- Dockerised all the components ( also including dockercompose)
+- Test - Test templates for testing backends
+- SQLITE DB
+- Zip download
+<img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/document/Resourecs/Generate%20BoilerPlate.png" width="128"/>
 
 # Requirements for using different frameworks and tools :
 
 ## 1. Docker
 Change docker-compose.yml as required by your tech stack
 
-For example React x Flask, make the following changes in docker-compose.yml:
-- {fronted} -> React
-- {backend} -> Flask 
+As a sample React X Flask is already given.
 
 Run:
 - Start the app
@@ -257,15 +235,5 @@ How to use the NTP Command line tool (Make sure you have python installed in you
 
 **STEP 2:** You can run the Tool using
 
-### `python tool.py`
+### `python tool.py` 
 
-    
-## 8. Testing
-    
-Tests are end to end, python automatically starts the server and makes requests to the backend for testsing
-
-Run:
-        pytest tests/test_{backend}.py -s
-
-Also for custom tests for your project, please alter the templates.py accordingly and those tests will be run.
-    

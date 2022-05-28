@@ -3,7 +3,7 @@ import { Button, Grid } from "@material-ui/core";
 import { GiInfinity, GiClockwork } from "react-icons/gi";
 import { DiDocker, DiOpensource } from "react-icons/di";
 import { VscExpandAll } from "react-icons/vsc";
-import { AiTwotoneApi, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiTwotoneApi } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
 
 import { useHistory } from "react-router-dom";
@@ -153,15 +153,6 @@ const Landing = () => {
 			>
 				<h1 className="Headers">FEATURES</h1>
 				<Grid container>
-					<Grid className="box" item lg={3} md={4} sm={6} xs={12}>
-						<AiOutlineWhatsApp size="90px" color="blue" />
-						<h2>WhatsApp Interface</h2>
-						<h5 style={{ color: "gray" }}>
-							It's a fast, simple, and convenient way to chat,
-							share photos and videos, send and receive documents,
-							and engage in private, secure conversations.
-						</h5>
-					</Grid>
 					<Grid className="box" item lg={3} md={4} sm={6} xs={12}>
 						<VscExpandAll size="90px" color="blue" />
 						<h2>Scalable Architecture</h2>

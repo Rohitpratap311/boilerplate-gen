@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import system from "../landing/images/System Architecture.png"
+// import system from "../landing/images/System Architecture.png"
 import "./activity.css"
 
 
@@ -57,14 +57,14 @@ function Activity() {
 
   return (
     <div style={{ textAlign: "center", padding: "40px" }}>
-      <h1 style={{ color: "Lightgreen" }}>VIRTUAL ASSISTANT SYSTEM ARCHITECTURE</h1>
+      <h1 style={{ color: "Lightgreen" }}>NTP SYSTEM ARCHITECTURE</h1>
       <div className={classes.container}>
           <Paper square>
           <Grid container>
-              <Grid style={{ backgroundColor: '#d6dffe'}} item md={12} sm={12} xs={12}>
+              {/* <Grid style={{ backgroundColor: '#d6dffe'}} item md={12} sm={12} xs={12}>
                   <img src={ system } className="start-img" alt="landing_image" />
                   <h2>Fig.3. System Architecture</h2>
-              </Grid>
+              </Grid> */}
               <Grid item md={12} sm={12} xs={12} style={{ padding: "20px" }}>
                   <h4 style={{ textAlign: "left" }}>
                   <p>To provide high speed, automatic software integration, back-ups, mobility, Etc., The proposed system is a cloud-based solution. DigitalOcean, an Infrastructure as a service (IaaS) provider, is used.</p>

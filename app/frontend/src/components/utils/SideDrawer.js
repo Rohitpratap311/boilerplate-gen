@@ -99,6 +99,22 @@ const SideDrawer = props => {
               </ListItem>
           <Divider className={classes.divider} />
           <List>
+
+            <ListItem button onClick={() => {pushLink('/dashboard')}}>
+              <ListItemIcon><Avatar><DashboardIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemText primary="Problem Statement" />
+              </ListItem>
+              <ListItem button onClick={() => {pushLink('/activity')}}>
+                <ListItemIcon><Avatar><AccountTreeIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemText primary="System Architecture" />
+              </ListItem>
+              <ListItem button onClick={() => {pushLink('/')}}>
+              <ListItemIcon><Avatar><AddToHomeScreenSharpIcon fontSize='small' /></Avatar></ListItemIcon>
+                <ListItemText primary="Overview" />
+              </ListItem>
+          </List>
+          <Divider className={classes.divider} />
+          <List>
           <ListSubheader component="div">
             TEMPLATE-GENERATOR
           </ListSubheader>
