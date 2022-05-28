@@ -95,7 +95,7 @@ function QADemo() {
   const handleSubmit = (event) => {
     console.log(formValues);
     event.preventDefault();
-    if (formValues.dev === "AR_VR"|| formValues.frontend === "HTML5" || formValues.backend === "NodeJS" || formValues.db === "MongoDB"){
+    if (formValues.dev === "AR_VR"|| formValues.frontend === "HTML5" || formValues.backend === "NodeJS" || formValues.db === "MongoDB" || formValues.frontend === "Flutter"){
         alert("Select Available Techstacks!")
         setIsSubmit(false);
     } else{
@@ -110,7 +110,7 @@ function QADemo() {
       <h1 style={{ color: "Lightgreen" }}>Jumpstart your Development with us!!</h1>
       <div className={classes.container}>
             <Paper square style={{ padding: "30px"}}>
-            { isSubmit && (formValues.dev !== "AR_VR"|| formValues.frontend !== "HTML5" || formValues.frontend !== "ReactNative" || formValues.frontend !== "Flutter" || formValues.db !== "MongoDB") ? (
+            { isSubmit && (formValues.dev !== "AR_VR"|| formValues.frontend !== "HTML5" || formValues.backend !== "NodeJS" || formValues.frontend !== "Flutter" || formValues.db !== "MongoDB") ? (
                 <h3 style={{ color: "white" }}>BoilerPlate Successfully Generated and Downloaded!!</h3>
             ) : (
                 <h3 style={{ color: "white" }}>Please select your preferred Tech-Stacks</h3>
@@ -148,8 +148,8 @@ function QADemo() {
                                     name="frontend"
                                     onChange={handleChange}
                                 >
+                                    <option value="ReactNative">React Native</option>
                                     <option value="Flutter">Flutter (coming soon)</option>
-                                    <option value="ReactNative">React Native (coming soon)</option>
                                 </select>
                             ) : (
                                 <select
@@ -168,15 +168,27 @@ function QADemo() {
                     <Grid md={6} sm={6} style={{ padding: "20px" }}>
                         <label style={{ display: "block", padding: "5px" }}>Backend FrameWork</label>
                         <div class="select-dropdown">
-                            <select
-                                name="backend"
-                                onChange={handleChange}
-                            >
-                                <option value="FastAPI">FastAPI</option>
-                                <option value="Flask">Flask</option>
-                                <option value="Springboot">SpringBoot</option>
-                                <option value="NodeJS">NodeJS</option>
-                            </select>
+                            { formValues.dev === "MobileApp" ? (
+                                <select
+                                    name="backend"
+                                    onChange={handleChange}
+                                >
+                                    {/* <option value="FastAPI">FastAPI</option>
+                                    <option value="Flask">Flask</option>
+                                    <option value="Springboot">SpringBoot</option>
+                                    <option value="NodeJS">NodeJS (coming soon)</option> */}
+                                </select>
+                            ) : (
+                                <select
+                                    name="backend"
+                                    onChange={handleChange}
+                                >
+                                    <option value="FastAPI">FastAPI</option>
+                                    <option value="Flask">Flask</option>
+                                    <option value="Springboot">SpringBoot</option>
+                                    <option value="NodeJS">NodeJS (coming soon)</option>
+                                </select>
+                            )}
                         </div>
                     </Grid>
 
