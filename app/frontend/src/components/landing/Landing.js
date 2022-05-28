@@ -3,21 +3,32 @@ import { Button, Grid } from "@material-ui/core";
 import { GiInfinity, GiClockwork } from "react-icons/gi";
 import { DiDocker, DiOpensource } from "react-icons/di";
 import { VscExpandAll } from "react-icons/vsc";
-import { AiTwotoneApi, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiTwotoneApi } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
-
+import Lottie from "react-lottie";
+import landingAnimation from "./images/landingAnimation.json";
 import { useHistory } from "react-router-dom";
 import Header from "./Header";
-import { PieChart, WordChart } from "./Charts.js";
+import { PieChart } from "./Charts.js";
 import TechStack from "./Techstack";
 import Footer from "./Footer";
-import start_image from "./images/IT_Service_Management.png";
+// import start_image from "./images/IT_Service_Management.png";
 // import FadeIn from "../utils/FadeIn";
 
 import "./Landing.css";
 
 const Landing = () => {
 	let history = useHistory();
+	const defaultOptions = {
+		loop: true,
+		autoplay: true,
+		// here is where we will declare lottie animation
+		// "animation" is what we imported before
+		animationData: landingAnimation,
+		rendererSettings: {
+		  preserveAspectRatio: "xMidYMid slice",
+		},
+		};
 
 	return (
 		<div className="landing">
@@ -88,11 +99,7 @@ const Landing = () => {
 						md={6}
 						xs={12}
 					>
-						<img
-							src={start_image}
-							className="start-img"
-							alt="landing_image"
-						/>
+						<Lottie options={defaultOptions} height={500} width={650} />
 					</Grid>
 				</Grid>
 			</div>
@@ -143,15 +150,6 @@ const Landing = () => {
 			>
 				<h1 className="Headers">FEATURES</h1>
 				<Grid container>
-					<Grid className="box" item lg={3} md={4} sm={6} xs={12}>
-						<AiOutlineWhatsApp size="90px" color="blue" />
-						<h2>WhatsApp Interface</h2>
-						<h5 style={{ color: "gray" }}>
-							It's a fast, simple, and convenient way to chat,
-							share photos and videos, send and receive documents,
-							and engage in private, secure conversations.
-						</h5>
-					</Grid>
 					<Grid className="box" item lg={3} md={4} sm={6} xs={12}>
 						<VscExpandAll size="90px" color="blue" />
 						<h2>Scalable Architecture</h2>
@@ -216,9 +214,9 @@ const Landing = () => {
 				</Grid>
 			</div>
 
-			<div className="section-content">
+			{/* <div className="section-content">
 				<WordChart />
-			</div>
+			</div> */}
 
 			<div
 				className="section-content section5"

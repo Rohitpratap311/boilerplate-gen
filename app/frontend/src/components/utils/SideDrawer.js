@@ -101,7 +101,7 @@ const SideDrawer = props => {
           <List>
             <ListItem button onClick={() => {pushLink('/dashboard')}}>
               <ListItemIcon><Avatar><DashboardIcon fontSize='small' /></Avatar></ListItemIcon>
-                <ListItemText primary="Description" />
+                <ListItemText primary="Problem Statement" />
               </ListItem>
               <ListItem button onClick={() => {pushLink('/activity')}}>
                 <ListItemIcon><Avatar><AccountTreeIcon fontSize='small' /></Avatar></ListItemIcon>

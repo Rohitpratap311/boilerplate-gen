@@ -57,11 +57,11 @@ def generate(front, back):
     backend = REPO_ROOT + f"/backend/{back}"
     frontend = REPO_ROOT + f"/frontend/{front}"
 
-    if not os.path.isdir(frontend) or not os.path.isdir(backend):
-        return json.dumps({
-            "status": "error",
-            "message": "Tech-stack not found",
-        })
+    # if front != "ReactNative" and (not os.path.isdir(frontend) or not os.path.isdir(backend)):
+    #     return json.dumps({
+    #         "status": "error",
+    #         "message": "Tech-stack not found",
+    #     })
 
     with tempfile.TemporaryDirectory() as tmpdir:
         memory_file = BytesIO()
@@ -73,9 +73,10 @@ def generate(front, back):
         shutil.copy(f"{TESTS_FOLDER}/templates.py", testdir)
 
         with zipfile.ZipFile(memory_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
-            zipdir(backend, zipf)
+            if front != "ReactNative":
+                zipdir(testdir, zipf)
+                zipdir(backend, zipf)
             zipdir(frontend, zipf)
-            zipdir(testdir, zipf)
             zipf.write(f"{REPO_ROOT}/docker-compose.yml", "docker-compose.yml")
 
         memory_file.seek(0)
