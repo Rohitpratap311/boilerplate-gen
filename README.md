@@ -39,7 +39,7 @@
 - We have created **test templates** for testing backends frameworks.
 - This application provides a easy to use graphical **User Interface** so that anyone can use it and **download the ZIP file** for templates. 
 
-<br> <img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/document/Resourecs/Generate%20BoilerPlate.png" /> <br>
+<br> <img src="https://github.com/Aerothon-NTP/boilerplate-gen/blob/main/Resourecs/Generate%20BoilerPlate.png" /> <br>
 
 # Requirements for using different frameworks and tools :
 
