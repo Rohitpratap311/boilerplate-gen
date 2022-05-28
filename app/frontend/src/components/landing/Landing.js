@@ -12,6 +12,8 @@ import { PieChart, WordChart } from "./Charts.js";
 import TechStack from "./Techstack";
 import Footer from "./Footer";
 import start_image from "./images/IT_Service_Management.png";
+import Lottie from "react-lottie";
+import landingAnimation from "./images/landingAnimation.json";
 // import FadeIn from "../utils/FadeIn";
 
 import "./Landing.css";
@@ -19,6 +21,17 @@ import "./Landing.css";
 const Landing = () => {
 	let history = useHistory();
 
+	const defaultOptions = {
+		loop: true,
+		autoplay: true,
+		// here is where we will declare lottie animation
+		// "animation" is what we imported before 
+		animationData: landingAnimation,
+		rendererSettings: {
+		   preserveAspectRatio: "xMidYMid slice",
+		},
+	};
+  
 	return (
 		<div className="landing">
 			<Header />
@@ -67,7 +80,7 @@ const Landing = () => {
 						<Button
 							variant="contained"
 							color="primary"
-							onClick={() => history.push("/dashboard")}
+							onClick={() => history.push("/generate-WebApp")}
 						>
 							Go to Console
 						</Button>
@@ -75,7 +88,7 @@ const Landing = () => {
 						<Button
 							variant="outlined"
 							color="primary"
-							href="https://github.com/itslasagne/betches"
+							href="https://github.com/Aerothon-NTP/boilerplate-gen"
 						>
 							Github
 						</Button>
@@ -88,11 +101,8 @@ const Landing = () => {
 						md={6}
 						xs={12}
 					>
-						<img
-							src={start_image}
-							className="start-img"
-							alt="landing_image"
-						/>
+						<Lottie options={defaultOptions} height={500} width={650} />
+
 					</Grid>
 				</Grid>
 			</div>
